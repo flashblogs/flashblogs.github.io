@@ -115,9 +115,14 @@
       for (var j = 0, len2 = res.list.length; j < len2; j++) {
         var data = res.list[j].arr;
         var liTmpl = "";
+        
+        var imgSite = res.list[j].site; //图床的域名
+
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'http://pcrd0aeyo.bkt.clouddn.com/' + data.link[i] + '!mini';
-          var src = 'http://pcrd0aeyo.bkt.clouddn.com/' + data.link[i];
+          // var minSrc = 'http://pcrd0aeyo.bkt.clouddn.com/' + data.link[i] + '!mini';
+          // var src = 'http://pcrd0aeyo.bkt.clouddn.com/' + data.link[i];
+          var minSrc = imgSite + data.link[i] + '!mini';
+          var src = imgSite + data.link[i];
           var type = data.type[i];
           var target = src ;// + (type === 'video' ? '.mp4' : '.jpg');
           //src += '.jpg';
