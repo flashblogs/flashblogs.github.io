@@ -121,11 +121,15 @@
         for (var i = 0, len = data.link.length; i < len; i++) {
           // var minSrc = 'http://pcrd0aeyo.bkt.clouddn.com/' + data.link[i] + '!mini';
           // var src = 'http://pcrd0aeyo.bkt.clouddn.com/' + data.link[i];
-          var minSrc = imgSite + data.link[i] + '!mini';
           var src = imgSite + data.link[i];
           var type = data.type[i];
-          var target = src ;// + (type === 'video' ? '.mp4' : '.jpg');
-          //src += '.jpg';
+          var target = src;
+
+          if(type === 'video'){
+            target = src + '.mp4';
+            src =  imgSite + data.link[i]+'.jpg';
+          }
+          var minSrc = src + '!mini';
 
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                 <a href="' + src + '" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + target + '">\

@@ -169,6 +169,112 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-upload-photos-tips" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/04/upload-photos-tips.html">拾掇-上传相册技巧</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/04/upload-photos-tips.html" class="archive-article-date">
+  	<time datetime="2018-08-04T03:39:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="部署相册，特别注意的地方"><a href="#部署相册，特别注意的地方" class="headerlink" title="部署相册，特别注意的地方"></a>部署相册，特别注意的地方</h2><blockquote>
+<ol>
+<li>先上传图片到七牛云(<code>1120213119</code>)，可以用辅助工具(<code>SunSync.exe</code>)批量上传本地的图片到七牛云制定的存储空间；</li>
+<li>根据本地目录生成相册数据json格式，使用小工具(<code>FilesConfigJson.exe</code>),将生成好的json字符串粘贴至：<strong>项目(backupBlogs)-&gt;source-&gt;chip-&gt;ins.json</strong> ，注意粘贴到文件开始部分；</li>
+<li>图片文件支持多种格式，如果是视频文件，目前支持 <code>.mp4</code> 格式；<strong>特别注意：上传视频文件，同时必须上传一个同文件名的 <code>.jpg</code> 格式的 封面图片，如：1.mp4文件必须同目录对应有一个1 .jpg 图片</strong>；</li>
+<li>视频、图片文件如果存放在多个存储空间（七牛云的不同存储空间，域名不一样），可以配置 <code>site</code> 属性，当然在工具<code>FilesConfigJson.exe</code>中有相应的配置；</li>
+<li>git 管理：1.项目程序（<code>backupBlogs</code>）源码通过vscode编辑，git同步的是到<code>coding.net</code>的ishow(361042070)上；而通过，<code>hexo d</code> 指令发布的是<code>github</code>源码与生成的静态网站到<code>coding.net</code>;</li>
+<li>git 存储位置<code>github</code>:源码、<code>coding.net</code>：源码+发布(ishow)。</li>
+</ol>
+</blockquote>
+<h2 id="博客、相册日常一般命令"><a href="#博客、相册日常一般命令" class="headerlink" title="博客、相册日常一般命令"></a>博客、相册日常一般命令</h2><ul>
+<li>写一篇文章</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<p><em>[layout] 缺省时默认是post，如：<code>hexo new &quot;My New Post&quot;</code></em></p>
+<ul>
+<li>生成静态化</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p><em>生成的文件，将全部在 根目录下的 <code>public</code> 文件夹</em></p>
+<ul>
+<li>启动服务器本地预览（默认地址：<code>http://localhost:4000</code>）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line"></span><br><span class="line">hexo s -p 4001</span><br></pre></td></tr></table></figure>
+<p><em>多个站点的时候，需要配置不同的服务器端口</em></p>
+<ul>
+<li>发布到Git空间，项目配置了2个Git：一个提交源码到github(1961221938)、一个提交生成的项目html到coding.net(361042070)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">拾掇</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">相册</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/04/upload-photos-tips.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-2017" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -176,7 +282,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/02/hello-2017.html">再见，2016！你好，2017！ 2.2</a>
+      <a class="article-title" href="/2017/02/02/hello-2017.html">再见，2016！你好，2017！！ 2.2</a>
     </h1>
   
 
@@ -800,6 +906,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
@@ -816,7 +926,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color1">拾掇,相册</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">拾掇</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">相册</a>
               </li>
             
             <div class="clearfix"></div>

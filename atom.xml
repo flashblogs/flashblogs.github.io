@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ishow.coding.me/"/>
-  <updated>2018-07-31T08:02:24.687Z</updated>
+  <updated>2018-08-04T06:47:08.229Z</updated>
   <id>https://ishow.coding.me/</id>
   
   <author>
@@ -17,17 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>再见，2016！你好，2017！ 2.2</title>
+    <title>拾掇-上传相册技巧</title>
+    <link href="https://ishow.coding.me/2018/08/04/upload-photos-tips.html"/>
+    <id>https://ishow.coding.me/2018/08/04/upload-photos-tips.html</id>
+    <published>2018-08-04T03:39:46.000Z</published>
+    <updated>2018-08-04T06:47:08.229Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="部署相册，特别注意的地方"><a href="#部署相册，特别注意的地方" class="headerlink" title="部署相册，特别注意的地方"></a>部署相册，特别注意的地方</h2><blockquote><ol><li>先上传图片到七牛云(<code>1120213119</code>)，可以用辅助工具(<code>SunSync.exe</code>)批量上传本地的图片到七牛云制定的存储空间；</li><li>根据本地目录生成相册数据json格式，使用小工具(<code>FilesConfigJson.exe</code>),将生成好的json字符串粘贴至：<strong>项目(backupBlogs)-&gt;source-&gt;chip-&gt;ins.json</strong> ，注意粘贴到文件开始部分；</li><li>图片文件支持多种格式，如果是视频文件，目前支持 <code>.mp4</code> 格式；<strong>特别注意：上传视频文件，同时必须上传一个同文件名的 <code>.jpg</code> 格式的 封面图片，如：1.mp4文件必须同目录对应有一个1 .jpg 图片</strong>；</li><li>视频、图片文件如果存放在多个存储空间（七牛云的不同存储空间，域名不一样），可以配置 <code>site</code> 属性，当然在工具<code>FilesConfigJson.exe</code>中有相应的配置；</li><li>git 管理：1.项目程序（<code>backupBlogs</code>）源码通过vscode编辑，git同步的是到<code>coding.net</code>的ishow(361042070)上；而通过，<code>hexo d</code> 指令发布的是<code>github</code>源码与生成的静态网站到<code>coding.net</code>;</li><li>git 存储位置<code>github</code>:源码、<code>coding.net</code>：源码+发布(ishow)。</li></ol></blockquote><h2 id="博客、相册日常一般命令"><a href="#博客、相册日常一般命令" class="headerlink" title="博客、相册日常一般命令"></a>博客、相册日常一般命令</h2><ul><li>写一篇文章</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p><em>[layout] 缺省时默认是post，如：<code>hexo new &quot;My New Post&quot;</code></em></p><ul><li>生成静态化</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure><p><em>生成的文件，将全部在 根目录下的 <code>public</code> 文件夹</em></p><ul><li>启动服务器本地预览（默认地址：<code>http://localhost:4000</code>）</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line"></span><br><span class="line">hexo s -p 4001</span><br></pre></td></tr></table></figure><p><em>多个站点的时候，需要配置不同的服务器端口</em></p><ul><li>发布到Git空间，项目配置了2个Git：一个提交源码到github(1961221938)、一个提交生成的项目html到coding.net(361042070)</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      纵使困顿难行，亦当砥砺奋进!
+    
+    </summary>
+    
+    
+      <category term="拾掇" scheme="https://ishow.coding.me/tags/%E6%8B%BE%E6%8E%87/"/>
+    
+      <category term="相册" scheme="https://ishow.coding.me/tags/%E7%9B%B8%E5%86%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>再见，2016！你好，2017！！ 2.2</title>
     <link href="https://ishow.coding.me/2017/02/02/hello-2017.html"/>
     <id>https://ishow.coding.me/2017/02/02/hello-2017.html</id>
     <published>2017-02-02T02:04:56.000Z</published>
-    <updated>2018-07-31T08:02:24.687Z</updated>
+    <updated>2018-08-04T06:21:36.527Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>2017 —— 丁酉年，鸡年；五行属山下火命，独立之鸡，是火鸡之命</p></blockquote><h2 id="2016说说这年的工作，一把辛酸泪"><a href="#2016说说这年的工作，一把辛酸泪" class="headerlink" title="2016说说这年的工作，一把辛酸泪"></a>2016说说这年的工作，一把辛酸泪</h2><p>刚刚过去的猴年，是收获颇丰的一年，也是比较尴尬的一年。QAQ</p><p>作为团队的leader，上半年满腔热血为了新项目和兄弟们夜以继日的艰苦奋战，从最开始的调研阶段，到研发上架，再到最后的运营推广，<br>总算不负众望，拿出了一个完整的产品-APP。</p><p>在整个产品的研发周期中，学会了很多，也再次领略到了个中艰辛，这里面有来自外部的压力，也有来自团队内部的冲突。<br>所幸，公司上层大力支持，这也是能走到最后的根本吧。</p><p>公司也拿着这个APP，去谈了好几个比较大的地产项目（谈成了项目，不一定表示项目款到位，这也是后半年最蛋疼的一点），<br>当公司上下都摩拳擦掌，准备大展手脚的时候，危机突然而至！</p><p>悲剧发生在运营推广了1个月左右的时候。由于市场部门业务回款问题，导致资金链断裂，而刚刚稍有起色的运营推广，也被迫中止。<br>项目无奈处于维护状态，不再对外大肆宣传推广。原以为这种情况仅仅是暂时的，谁知，过了2个多月依然毫无起色，甚至有恶化的迹象。<br>随着团队的核心技术人员，相继离开，整个公司氛围降至冰点。公司每天也都在为各样的事而扯皮、苟延残喘。</p><p>到了2016年底，公司的战略也已经大幅变化，全公司的工作都空前一致：<strong>回款</strong></p><p>说来挺搞笑，公司的在外业务款几百万，应付公司日常每个月10多万的开销还捉襟见肘，这种窘境直到年底依然没有得到改观；<br>项目初期展望的年终奖也成为泡影咯。</p><h2 id="初中同学会-腊月初四"><a href="#初中同学会-腊月初四" class="headerlink" title="初中同学会 腊月初四"></a>初中同学会 腊月初四</h2><p><strong>“没事参加同学会<br>拆散一对是一对”</strong></p><p>玩笑段子，还是相信同学间的“纯真感情”，没有外面现实社会中的那么多龌蹉……至少要少的多吧</p><p>2017新年感到特别特别感觉高兴的是，时隔12年，初中的一帮同窗再次聚首，<br>除了刚见面的时候有点拘谨外，在简单寒暄后，谈到往日种种很快大家也都热烈起来。<br>没有一点刻意、做作、应酬的感觉。</p><p>或谈论往昔同窗趣事；或谈论工作；或谈论爱情；或谈论孩子……<br>感觉大家都长大了，成熟了，但是又感觉还是以前读书时期的那个TA</p><p>下午陪着同桌死党看了一场电影《大闹天竺》，虽然我明知道是烂片，但是心情非常好，<br>因为她的兴致比较高，据她说，这几年被家庭孩子所累，都没有时间进电影院了，想想真是一个悲伤的故事。</p><p>仔细回想，这还是第一次和她一起看电影，电影剧情讲的什么已经忘记了，期间，一直在想读书时候她的各种2的情况，<br>想到有趣处，禁不住笑出了声，真是一个美好的下午！</p><p>可惜，中途有事，提前离场了，说好了，欠她一场电影，记得下次再补上。</p><p>同学会的高潮，随着班主任老沈和美女唐老师的到来达到了高潮。汗，想想当时我们班在全校来说都是淘出了名的，<br>到来的两位老师，当时着实付出了蛮多心血（可以这么说，现在的老师的职业态度以及情感投入远不及当时我们的老师）。</p><p>老沈，人逢喜事精神爽，格外的意气风发；唐老师，漂亮依旧风采照人，在与会同学们的建(起)议(哄)下，载歌载舞!<br>真心感谢两位授业恩师！</p><p> 《<a href="/2017/02/01/miss-tang-saying.html">聚会有感</a>》 <em>-via 唐老师</em> </p><blockquote><p>  同学聚会<br>  悠悠往事已经年，爱恨情仇如云烟；<br>  同窗三载金兰事，江湖夜雨化樽前。</p></blockquote><h2 id="你好，2017"><a href="#你好，2017" class="headerlink" title="你好，2017"></a>你好，2017</h2><p><strong>如果你有梦想的话，就要去捍卫它。那些一事无成的人想告诉你你也成不了大器。如果你有理想的话，就要去努力实现。就这样。<br>你要尽全力保护你的梦想。那些嘲笑你梦想的人，因为他们必定会失败，他们想把你变成和他们一样的人。我坚信，只要我心中有梦想，<br>我就会与众不同，你也是。</strong> <em>-via 泪目的《当幸福来敲门》</em></p>]]></content>
     
     <summary type="html">
     
-      记录生活点滴，成长之路！！！
+      记录生活点滴，成长之路
     
     </summary>
     
